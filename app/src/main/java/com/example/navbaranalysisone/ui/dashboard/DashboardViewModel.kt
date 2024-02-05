@@ -6,15 +6,15 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.navbaranalysisone.data.model.EndPtTwoModelItem
 import com.example.navbaranalysisone.data.remote.ApiService
+import com.example.navbaranalysisone.di.Api2Qualifier
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-import javax.inject.Named
 
 @HiltViewModel
 class DashboardViewModel @Inject constructor(
-    @Named("api2") private val api2Service: ApiService,
+    @Api2Qualifier private val api2Service: ApiService,
 ): ViewModel() {
     private val _text = MutableLiveData<List<EndPtTwoModelItem>>()  // Change LiveData type
     val text: LiveData<List<EndPtTwoModelItem>> = _text

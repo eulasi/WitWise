@@ -9,12 +9,19 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.navbaranalysisone.LoginActivity
+import com.example.navbaranalysisone.data.remote.ApiService
 import com.example.navbaranalysisone.databinding.FragmentNotificationsBinding
+import com.example.navbaranalysisone.di.Api3Qualifier
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class NotificationsFragment : Fragment() {
+
+    @Inject
+    @Api3Qualifier
+    lateinit var api3Service: ApiService
 
     private var _binding: FragmentNotificationsBinding? = null
     private val binding get() = _binding!!

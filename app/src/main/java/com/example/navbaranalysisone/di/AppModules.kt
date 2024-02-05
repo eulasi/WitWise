@@ -62,22 +62,20 @@ class AppModule {
     }
 
     @Provides
-    @Named("api1")
+    @Api1Qualifier
     fun providesApi1Service(@Named("api1") retrofit: Retrofit): ApiService {
         return retrofit.create(ApiService::class.java)
     }
 
-
     @Provides
-    @Named("api2")
+    @Api2Qualifier
     fun providesApi2Service(@Named("api2") retrofit: Retrofit): ApiService {
         return retrofit.create(ApiService::class.java)
     }
 
     @Provides
-    @Named("api3")
+    @Api3Qualifier
     fun providesApi3Service(@Named("api3") retrofit: Retrofit): ApiService {
         return retrofit.create(ApiService::class.java)
     }
-
 }
