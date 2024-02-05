@@ -13,4 +13,5 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="advisory">THE CONTENT IN THIS APP MAY BE INAPPROPRIATE TO CERTAIN AUDIENCES. PLEASE CONTINUE AT YOUR OWN RISK.</string>
+    <string name="sign_out">Sign Out</string>
 </resources>
