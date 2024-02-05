@@ -1,8 +1,8 @@
 package com.example.navbaranalysisone.data.remote
 
-import com.example.navbaranalysisone.data.model.endptone.EndPtOneModelItem
-import com.example.navbaranalysisone.data.model.endptthree.EndPtThreeModelItem
-import com.example.navbaranalysisone.data.model.endpttwo.EndPtTwoModelItem
+import com.example.navbaranalysisone.data.model.EndPtOneModelItem
+import com.example.navbaranalysisone.data.model.EndPtThreeModelItem
+import com.example.navbaranalysisone.data.model.EndPtTwoModelItem
 import retrofit2.http.GET
 
 interface ApiService {

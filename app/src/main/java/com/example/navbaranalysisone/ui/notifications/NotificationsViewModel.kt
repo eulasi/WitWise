@@ -1,12 +1,10 @@
 package com.example.navbaranalysisone.ui.notifications
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.navbaranalysisone.data.model.endptthree.EndPtThreeModelItem
-import com.example.navbaranalysisone.data.remote.ApiDetails
+import com.example.navbaranalysisone.data.model.EndPtThreeModelItem
 import com.example.navbaranalysisone.data.remote.ApiService
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers

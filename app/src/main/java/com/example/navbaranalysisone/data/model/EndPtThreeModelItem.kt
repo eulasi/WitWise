@@ -1,4 +1,4 @@
-package com.example.navbaranalysisone.data.model.endptthree
+package com.example.navbaranalysisone.data.model
 
 
 import com.google.gson.annotations.SerializedName

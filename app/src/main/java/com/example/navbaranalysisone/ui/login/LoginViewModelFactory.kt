@@ -2,8 +2,8 @@ package com.example.navbaranalysisone.ui.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.navbaranalysisone.data.LoginDataSource
-import com.example.navbaranalysisone.data.LoginRepository
+import com.example.navbaranalysisone.data.repository.LoginDataSource
+import com.example.navbaranalysisone.data.repository.LoginRepository
 
 // Design Pattern
 /**

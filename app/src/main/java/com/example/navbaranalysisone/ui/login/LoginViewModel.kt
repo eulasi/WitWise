@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import android.util.Patterns
-import com.example.navbaranalysisone.data.LoginRepository
-import com.example.navbaranalysisone.data.Result
+import com.example.navbaranalysisone.data.repository.LoginRepository
+import com.example.navbaranalysisone.data.repository.Result
 
 import com.example.navbaranalysisone.R
 import dagger.hilt.android.lifecycle.HiltViewModel

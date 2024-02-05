@@ -1,8 +1,8 @@
 package com.example.navbaranalysisone.data.repository
 
-import com.example.navbaranalysisone.data.model.endptone.EndPtOneModelItem
-import com.example.navbaranalysisone.data.model.endptthree.EndPtThreeModelItem
-import com.example.navbaranalysisone.data.model.endpttwo.EndPtTwoModelItem
+import com.example.navbaranalysisone.data.model.EndPtOneModelItem
+import com.example.navbaranalysisone.data.model.EndPtThreeModelItem
+import com.example.navbaranalysisone.data.model.EndPtTwoModelItem
 
 // Interface in an attempt to implement a Repository pattern
 interface Repository {

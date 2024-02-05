@@ -3,8 +3,8 @@ package com.example.navbaranalysisone.ui.login
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.example.navbaranalysisone.R
-import com.example.navbaranalysisone.data.LoginRepository
-import com.example.navbaranalysisone.data.LoginRepositoryInterface
+import com.example.navbaranalysisone.data.repository.LoginRepository
+import com.example.navbaranalysisone.data.repository.LoginRepositoryInterface
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

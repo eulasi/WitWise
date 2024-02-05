@@ -1,4 +1,4 @@
-package com.example.navbaranalysisone.data
+package com.example.navbaranalysisone.data.repository
 
 /**
  * A generic class that holds a value with its loading status.

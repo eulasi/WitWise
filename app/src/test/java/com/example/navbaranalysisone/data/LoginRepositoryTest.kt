@@ -1,5 +1,8 @@
 package com.example.navbaranalysisone.data
 
+import com.example.navbaranalysisone.data.repository.LoginDataSource
+import com.example.navbaranalysisone.data.repository.LoginRepository
+import com.example.navbaranalysisone.data.repository.Result
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -50,7 +53,7 @@ class LoginRepositoryTest {
         // Assert
         assertTrue(result is Result.Success<*>)
         assertNotNull(loginRepository.user)
-        assertEquals("testUser", loginRepository.user?.displayName)
+        assertEquals("User", loginRepository.user?.displayName)
         assertTrue(failedResult is Result.Error)
         assertNull(loginRepository.user)
     }

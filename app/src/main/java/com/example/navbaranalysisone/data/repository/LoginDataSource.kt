@@ -1,4 +1,4 @@
-package com.example.navbaranalysisone.data
+package com.example.navbaranalysisone.data.repository
 
 import com.example.navbaranalysisone.data.model.LoggedInUser
 import java.io.IOException
