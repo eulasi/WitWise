@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.navbaranalysisone.data.LoginDataSource
 import com.example.navbaranalysisone.data.LoginRepository
 
+// Design Pattern
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
  * Required given LoginViewModel has a non-empty constructor

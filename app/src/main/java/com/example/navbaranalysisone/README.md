@@ -15,7 +15,7 @@
 - Firebase
 
 # Testing
-    ## Subject
+    ## Subjec
     - Functional: Does it work as expected?
     - Performance: Does it work quickly/efficiently?
     - Accessibility: Does it work with accessibility services?

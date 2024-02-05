@@ -1,10 +1,5 @@
 package com.example.navbaranalysisone.data.remote
 
-import okhttp3.OkHttpClient
-import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-
 // Singleton that can be used to access the API
 object ApiDetails {
     // Base URLs and endpoints for APIs
@@ -19,7 +14,7 @@ object ApiDetails {
 
 }
 
-// Potential APIs
+// APIs
 // PoetryDB - https://github.com/thundercomb/poetrydb#readme
 // https://poetrydb.org/title,random/;1
 

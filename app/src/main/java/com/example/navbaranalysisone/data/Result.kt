@@ -16,3 +16,6 @@ sealed class Result<out T : Any> {
         }
     }
 }
+
+
+// Could have been used for testing

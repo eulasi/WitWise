@@ -26,7 +26,7 @@ class NotificationsFragmentTest {
         // Move the fragment to the RESUMED state
         scenario.moveToState(Lifecycle.State.RESUMED)
 
-        // Perform your assertions and interactions here
+        // Assertions and interactions
 
         // Move the fragment to the DESTROYED state
         scenario.moveToState(Lifecycle.State.DESTROYED)

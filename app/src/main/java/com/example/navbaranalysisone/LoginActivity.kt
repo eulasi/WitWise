@@ -105,16 +105,24 @@ class LoginActivity : AppCompatActivity() {
 
             login.setOnClickListener {
                 loading.visibility = View.GONE
-               // loginViewModel.login(username.text.toString(), password.text.toString())
-                firebaseAuth.signInWithEmailAndPassword(username.text.toString(), password.text.toString())
+                // loginViewModel.login(username.text.toString(), password.text.toString())
+                firebaseAuth.signInWithEmailAndPassword(
+                    username.text.toString(),
+                    password.text.toString()
+                )
                     .addOnCompleteListener {
-                        if(it.isSuccessful){
+                        if (it.isSuccessful) {
                             //open home
                             startActivity(Intent(this@LoginActivity, MainActivity::class.java))
-                            Toast.makeText(this@LoginActivity, "Welcome Back", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@LoginActivity, "Welcome Back", Toast.LENGTH_SHORT)
+                                .show()
                             finish()
                         } else {
-                            Toast.makeText(this@LoginActivity, "Login Failed! Check Credentials or Register", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(
+                                this@LoginActivity,
+                                "Login Failed! Check Credentials or Register",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
                     }
 
@@ -156,9 +164,6 @@ class LoginActivity : AppCompatActivity() {
 
 
 }
-
-
-
 
 
 /**

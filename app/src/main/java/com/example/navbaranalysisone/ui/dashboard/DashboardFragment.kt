@@ -20,6 +20,7 @@ class DashboardFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
+
     //
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -52,7 +53,6 @@ class DashboardFragment : Fragment() {
         signOutButton.setOnClickListener {
             signOut()
         }
-
 
         return root
     }
