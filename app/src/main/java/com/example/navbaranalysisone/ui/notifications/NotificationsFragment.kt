@@ -42,9 +42,10 @@ class NotificationsFragment : Fragment() {
 
         notificationsViewModel.text.observe(viewLifecycleOwner) { item ->
             // Handle the single item (EndPtThreeModelItem) here
-            authorTextView.text = "${item?.author.orEmpty()}"
-            contentTextView.text = "${item?.content.orEmpty()}"
-            tagsTextView.text = "${item?.tags?.joinToString().orEmpty()}"
+            //Previous convention {name}TextView.text = {$"item?.author.orEmpty()"}
+            authorTextView.text = item?.author.orEmpty()
+            contentTextView.text = item?.content.orEmpty()
+            tagsTextView.text = item?.tags?.joinToString().orEmpty()
         }
 
         // Trigger the API call when the fragment is created
