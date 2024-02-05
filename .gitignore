@@ -1,3 +1,4 @@
+# user-specific files
 *.iml
 .gradle
 /local.properties
@@ -7,10 +8,49 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+# system files
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
+# local configuration files
 local.properties
 OldCode.md
+
+# built files
+*.apk
+*.ap_
+*.class
+*.dex
+*.pro
+*.so
+*.o
+*.out
+*.log
+# generated files
+/navigation-args-*.json
+/bin
+/gen
+out/
+
+# Android Studio configuration
+/.idea
+
+# Gradle files
+/.gradle
+/build/
+
+Thumbs.db
+
+# user-specific files
+*.iws
+*.ipr
+*.swp
+*.bak
+
+# logs and temp files
+/log/
+/log.log
+/temp/
+/temp.tmp
