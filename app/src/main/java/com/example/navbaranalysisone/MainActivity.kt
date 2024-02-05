@@ -4,9 +4,8 @@ package com.example.navbaranalysisone
 // Importing the required libraries
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.navigation.findNavController
@@ -14,8 +13,8 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.navbaranalysisone.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.analytics.analytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
 import dagger.hilt.android.AndroidEntryPoint
@@ -54,10 +53,10 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         // Adding click listener for the sign-out button
-        val signOutButton = findViewById<Button>(R.id.signOutButton)
-        signOutButton.setOnClickListener {
-            signOut()
-        }
+//        val signOutButton = findViewById<Button>(R.id.signOutButton)
+//        signOutButton.setOnClickListener {
+//            signOut()
+//        }
 
         logEvent()
 
@@ -99,11 +98,25 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         logEvent()
     }
-    // Might not need this
     private fun signOut() {
         val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.menu_sign_out -> {
+                signOut()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
 }

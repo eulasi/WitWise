@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.navbaranalysisone.LoginActivity
-import com.example.navbaranalysisone.R
 import com.example.navbaranalysisone.databinding.FragmentNotificationsBinding
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
@@ -46,10 +44,10 @@ class NotificationsFragment : Fragment() {
         notificationsViewModel.getText()
 
         // Add sign-out button click listener
-        val signOutButton: Button = binding.root.findViewById(R.id.signOutButton)
-        signOutButton.setOnClickListener {
-            signOut()
-        }
+//        val signOutButton: Button = binding.root.findViewById(R.id.signOutButton)
+//        signOutButton.setOnClickListener {
+//            signOut()
+//        }
 
 
         return root

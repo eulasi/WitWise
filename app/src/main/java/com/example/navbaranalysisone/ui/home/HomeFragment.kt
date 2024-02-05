@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.navbaranalysisone.LoginActivity
-import com.example.navbaranalysisone.R
 import com.example.navbaranalysisone.databinding.FragmentHomeBinding
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
@@ -46,10 +44,10 @@ class HomeFragment : Fragment() {
         // Trigger the API call when the fragment is created
         homeViewModel.getText()
 
-        val signOutButton: Button = binding.root.findViewById(R.id.signOutButton)
-        signOutButton.setOnClickListener {
-            signOut()
-        }
+//        val signOutButton: Button = binding.root.findViewById(R.id.signOutButton)
+//        signOutButton.setOnClickListener {
+//            signOut()
+//        }
 
         return root
     }
