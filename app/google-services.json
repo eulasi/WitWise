@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "748780187151",
+    "project_id": "witwise-e8890",
+    "storage_bucket": "witwise-e8890.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748780187151:android:2030e93d6e3143c2ce3d7a",
+        "android_client_info": {
+          "package_name": "com.example.navbaranalysisone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoUQSUGRKIkSPcIDhZn9_a9PVwNksXYpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
