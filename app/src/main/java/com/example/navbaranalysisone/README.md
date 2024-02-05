@@ -29,5 +29,5 @@
 # Styles
 - UI Cleaning and Feature Polishing
 
-# Links and Resources
+# Links and Resources,
 - https://console.firebase.google.com/u/0/project/witwise-e8890/overview
