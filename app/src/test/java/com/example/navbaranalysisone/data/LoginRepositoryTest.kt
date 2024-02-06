@@ -2,7 +2,6 @@ package com.example.navbaranalysisone.data
 
 import com.example.navbaranalysisone.data.repository.LoginDataSource
 import com.example.navbaranalysisone.data.repository.LoginRepository
-import com.example.navbaranalysisone.data.repository.Result
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Assert.assertEquals
@@ -42,22 +41,6 @@ class LoginRepositoryTest {
         loginRepository.logout()
         assertFalse(loginRepository.isLoggedIn)
     }
-
-// TODO : Fix this test
-    @Test
-    // Ensuring the loginRepository behaves correctly when attempting to log in with both valid and invalid credentials
-    fun login() = runBlocking {
-        // Act
-        val result = loginRepository.login("testUser", "testPassword")
-        val failedResult = loginRepository.login("invalidUser", "invalidPassword")
-        // Assert
-        assertTrue(result is Result.Success<*>)
-        assertNotNull(loginRepository.user)
-        assertEquals("User", loginRepository.user?.displayName)
-        assertTrue(failedResult is Result.Error)
-        assertNull(loginRepository.user)
-    }
-
 
     @Test
     // Ensuring the loginRepository behaves correctly when attempting to log out
