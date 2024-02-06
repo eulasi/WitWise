@@ -4,6 +4,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.example.navbaranalysisone.R
 import com.example.navbaranalysisone.data.repository.LoginRepository
+import org.junit.Assert.assertNotNull
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -39,7 +40,7 @@ class LoginViewModelTest {
 
     @Before
     fun setup() {
-        MockitoAnnotations.initMocks(this)
+        MockitoAnnotations.openMocks(this)
 
         loginViewModel = LoginViewModel(mockLoginRepository)
         loginViewModel.loginFormState.observeForever(loginFormObserver)
@@ -59,5 +60,18 @@ class LoginViewModelTest {
         loginViewModel.login("", "")
         verify(loginResultObserver).onChanged(LoginResult(error = R.string.login_failed))
     }
+    // ensure View model is not null
+    @Test
+    fun loginViewModel_isNotNull() {
+        val loginViewModel = LoginViewModel(loginRepository)
+        assertNotNull(loginViewModel)
+    }
 
+    @Test
+    fun testLogin() {
+        val loginViewModel = LoginViewModel(loginRepository)
+        loginViewModel.login("valid_username", "valid_password")
+        // Verify that loginRepository.login is called with the correct arguments
+        verify(loginRepository).login("valid_username", "valid_password")
+    }
 }

@@ -60,4 +60,11 @@ class LoginRepositoryTest {
     fun getDataSource() {
         assertEquals(testLoginDataSource, loginRepository.dataSource)
     }
+    // checking the loginRepository to ensure it is not null
+    @Test
+    fun loginRepository_isNotNull() {
+        val loginRepository = LoginRepository(dataSource = testLoginDataSource)
+        assertNotNull(loginRepository)
+    }
+
 }
