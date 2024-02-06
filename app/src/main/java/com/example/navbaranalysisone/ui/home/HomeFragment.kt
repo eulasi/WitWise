@@ -47,27 +47,19 @@ class HomeFragment : Fragment() {
             authorTextView.text = "${item?.author}"
             linesTextView.text = "${item?.lines?.joinToString()}"
         }
-
         // Trigger the API call when the fragment is created
         homeViewModel.getText()
-
-//        val signOutButton: Button = binding.root.findViewById(R.id.signOutButton)
-//        signOutButton.setOnClickListener {
-//            signOut()
-//        }
 
         return root
     }
 
     private fun signOut() {
         FirebaseAuth.getInstance().signOut()
-
         // Navigate back to the login activity
         val intent = Intent(activity, LoginActivity::class.java)
         startActivity(intent)
-        activity?.finish() // Optional: Close the current activity if needed
+        activity?.finish() // optional: Close the current activity if needed
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

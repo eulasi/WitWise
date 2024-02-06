@@ -83,6 +83,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    debugImplementation ("androidx.fragment:fragment-testing:1.5.5")
     implementation("androidx.fragment:fragment-ktx:1.3.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
     // Retrofit
