@@ -6,6 +6,7 @@ import javax.inject.Inject
 /**
  * Class that requests authentication and user information from the remote data source and
  * maintains an in-memory cache of login status and user credentials information.
+ * ?Does FireBase omit this class's Usage?
  */
 open class LoginRepository @Inject constructor(val dataSource: LoginDataSource) :
     LoginRepositoryInterface {
